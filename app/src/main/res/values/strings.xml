@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SensorApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sensor_title">Sensors in my device</string>
+    <string name="creator">Created by: Vladimir Salguero</string>
+</resources>
