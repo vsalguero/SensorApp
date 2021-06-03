@@ -1,9 +1,8 @@
 # SensorApp
 <p>Aplication Android Native with Java example using List the Sensors available in the device.</p>
 <p>You can open the sample using Android Studio IDE 4</p>
-<br><br>
 <img src="app/src/main/res/drawable/ic_launcher.png">
-<br><br>
+<br>
 <strong>Preview</strong><br>
 <br><br>
 <img src="https://1.bp.blogspot.com/-tf-2OtEv4sQ/YLksRkaLBQI/AAAAAAAAAOk/UNAolr4TGiEodMNITRfXUJ8T4fOXkIGtwCLcBGAsYHQ/s0/SensorApp.jpg">
