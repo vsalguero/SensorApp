@@ -7,9 +7,16 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Vladimir Salguero on 16/05/2016.
@@ -18,8 +25,10 @@ public class TrySensorActivity extends Activity implements SensorEventListener {
     private SensorManager mSensorManager;
     TextView mTimeStamp;
     TextView mAccuracy;
-    TextView[] mData;
     Sensor mSensor;
+    static final String NAME = "name";
+    static final String VALUE = "value";
+
 
     @Override
     public final void onCreate(Bundle savedInstanceState) {
@@ -38,19 +47,6 @@ public class TrySensorActivity extends Activity implements SensorEventListener {
         TextView view = (TextView) findViewById(R.id.sensorname);
         view.setText(mSensor.getName());
 
-        mData = new TextView[]{
-                (TextView) findViewById(R.id.data1),
-                (TextView) findViewById(R.id.data2),
-                (TextView) findViewById(R.id.data3),
-                (TextView) findViewById(R.id.data4),
-                (TextView) findViewById(R.id.data5),
-                (TextView) findViewById(R.id.data6),
-                (TextView) findViewById(R.id.data7),
-                (TextView) findViewById(R.id.data8),
-                (TextView) findViewById(R.id.data9),
-                (TextView) findViewById(R.id.data10),
-        };
-
 
     }
 
@@ -66,9 +62,25 @@ public class TrySensorActivity extends Activity implements SensorEventListener {
 
         float[] mValues;
         mValues = event.values;
+       
+        List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+
         for (int i = 0; i < mValues.length; i++) {
-            mData[i].setText("Data[" + i + "]" + mValues[i]);
+            Map<String, String> map = new HashMap<>();
+            map.put(VALUE, "Data[" + i + "] " + mValues[i]);
+            list.add(map);
         }
+
+        SimpleAdapter adapter = new SimpleAdapter(
+                this,
+                list,
+                android.R.layout.simple_list_item_2,
+                new String[]{NAME,VALUE},
+                new int[]{android.R.id.text1, android.R.id.text2}
+        );
+
+        ListView listView = (ListView) findViewById(R.id.listview);
+        listView.setAdapter(adapter);
 
 
     }
