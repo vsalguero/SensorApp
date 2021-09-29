@@ -11,6 +11,7 @@
 <a href="https://play.google.com/store/apps/details?id=vladimir.sensorapp" target="_blank"><img src="https://1.bp.blogspot.com/-Tgn3F6jJ0AQ/YMhVgcRfA0I/AAAAAAAAAQE/V4kOJQI60wAblf9OmPn87ZLqLQQMnrQIQCLcBGAsYHQ/s0/play.png" width="200" /></a>
 <br>
 <br>
-<strong>SUPPORT ME</strong>
+<strong>SUPPORT the project YoLeo App</strong>
+<a href="https://play.google.com/store/apps/details?id=com.yoleo" target="_blank">Yoleo Google Play</a>
 <br><br>
-<a href="https://www.buymeacoffee.com/vsalguero"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=vsalguero&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Bree&amp;outline_colour=000000&amp;coffee_colour=FFDD00" /></a>
+<a href="https://www.buymeacoffee.com/yoleo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=yoleo&amp;button_colour=BD5FFF&amp;font_colour=ffffff&amp;font_family=Bree&amp;outline_colour=000000&amp;coffee_colour=FFDD00" /></a>
